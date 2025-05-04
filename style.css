@@ -1,0 +1,319 @@
+*{  /* 1. basic configuration of the css */
+    margin: 0 ;
+    font-family : arial;
+    border : border-box;
+}
+
+.navbar{
+    /*
+    1. observing the height of navbar from different elements */
+    height: 60px; 
+    /*
+    2. observing the backgroud color as hexadecimal value
+    */
+    background-color: #0F1111;
+    /*
+    3. setting the text color
+    */
+    color: white;
+
+    /*to keep the icon and coming properties in the same line as nav bar*/
+    display : flex;  
+
+    /*to have contents in center*/
+    align-items: center;
+
+    /*to push the items to left as the coming items gets added */
+    justify-content: space-evenly;
+
+}
+
+    /* for nav logo to be visible setting height and width is a must
+    and inspection of the amazon website gives the following approx measurement */
+    /* properties of the "nav-bar "*/
+.nav-logo
+{
+height : 50px;
+width  : 100px;
+}
+
+/*Image of logo*/
+.logo
+{
+    /*amazon logo*/
+    background-image: url("amazon_logo.png");
+    background-size : cover ;
+    height: 60px;
+    width :100%;
+
+}
+
+
+
+/* properties of the "nav-logo border "*/
+
+.border{
+   
+    border: 1.5px solid transparent;
+
+}
+
+/* customised : for all border, while hovered the logo it will show border (real website shows white border ) */
+.border:hover {
+    border : 1.5px solid white;
+}
+
+
+.add1{
+     /*deliever to */
+     color: #cccccc;
+    font-size : .85rem ;
+    margin-left: 15px;
+}
+
+.add2{
+    /*"canada "*/
+    font-size : 1rem;
+    margin-left: 3px;
+}
+.add-icon{
+    /*icon of the location */
+    display: flex;/*to have "canada and icon in the same line "*/
+    
+}
+
+/* Box - 3  */
+.nav-search{
+    /*the whole nav search area containing the search icon , bar and select menu */
+    display: flex;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+    /*So each elements will be in the center */
+    justify-content: center;
+    
+
+}
+
+.search-select{
+    /*Select menu*/
+    
+    padding: 5px;/*to incease the width*/
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    background-color:#E6E6E6 ;
+} 
+
+.search-input{
+    /*search bar*/
+    width:100%; /*to take the total allocated space for the div 620px*/
+    border: none; /*to remove the default border*/
+    font-size:1rem;
+    background-color: #ffffff;
+}
+
+.search-icon{
+    /*search icon */
+    /*no height to be set cause managing the height of the nav search parent class or division */
+    width:45px;
+    /*background color of the icon */
+    background-color: #d2a100;
+    /*color of the icon */
+    color:#0F1111;
+    /*without flex a-i and j-c does not work */
+    display:flex;
+    /*to take the icon down to middle*/
+    align-items: center ;
+    /*to take the icon right to middle */
+    justify-content: center;
+    /*to make the border round */
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    /*to increase the icon size*/
+    font-size:1.2rem;
+    
+
+}
+
+.nav-search:hover{
+border:2px solid orange;
+}
+
+/**Box -4**/
+.span{
+    font-size: 0.7rem;
+}
+.nav-second {
+    font-size: .85rem;
+    font-weight: 700;
+}
+/*Cart Icon*/
+
+.nav-cart i {
+    font-size: 2.5rem;
+}
+.nav-cart{
+    font-size:.85rem;
+    font-weight: 700;
+}
+
+/*nav bar done */
+.panel{
+    height : 45px;
+    background-color: #222f3d;
+    color:#ffffff;
+    display: flex;
+    align-items: center ;
+    justify-content: space-evenly;
+  
+}
+.panel-ops p{
+    display: inline;
+    margin-left: 15px;
+}
+.panel-ops{
+        width:70%;
+}
+
+.panel-deals{
+    font-size: .9rem;
+    font-weight:700;
+}
+
+/*Panel done */ 
+/*header section done*/
+.hero-section {
+   
+    background-image: url("mothers_day_.jpg");
+    width:1696px;
+    height:350px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+  
+}
+.hero-msg{
+    /*for the text box of the bg image in the hero section*/
+    background-color: white;
+    color: black;
+    height:40px;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    margin-bottom:25px;
+    width:80%;
+}
+.hero-msg a{
+    /*coloring the link of the text*/
+    color: #007185;
+}
+
+/*hero section finishes*/
+/*Shop Section*/
+.shop-section{
+    display: flex;
+    /*to have all of the boxes in the same line*/
+    justify-content: space-evenly;
+    /*color for the whole section that holds the boxes  */
+    background-color:#e2e7e6;
+    /*to have 4 boxes in a row */
+    flex-wrap: wrap;
+}
+/*class for each of the boxes */
+.box{
+   
+    height:350px;
+    width:23%;
+    background-color:white;
+    /*padding : around area inside the border */
+    /*margin: aroung aread outside the border */
+    /*border : between the margin and padding */
+    padding: 20px 0px 15px; /*on top 20px , on bottom 15px, on left and right 0px */
+}
+
+.box-img{
+   /*here content is only the image inside the box */
+   height:300px;
+   margin-top:.7rem;
+   background-size:cover;
+}
+
+.box-content{
+    /* content : heading and background image*/
+   margin-left : 1rem;
+   margin-right: 1rem;
+
+}
+/*footer panel */
+.foot-panel1{
+background-color: #37475a;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center ;
+height:19px;
+padding: 15px;
+font-size:.85rem;
+margin-top:15px;
+
+
+}
+.foot-panel2{
+    display: flex;
+    background-color: #222f3d;
+    justify-content: space-evenly;
+    height:300px;
+    
+    
+}
+.foot-panel2 p{
+    color:white;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.foot-panel2 a{
+    margin-top: 10px;
+    display: flex;
+    color:#dddddd;
+    font-size: .85rem;
+}
+.foot-panel3{
+    background-color:#222f3d;
+    border-top:0.5px solid white;
+    height:68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo
+{
+    /*amazon logo*/
+    background-image: url("amazon_logo.png");
+    background-size : cover ;
+    height: 60px;
+    width :100px;
+    
+
+}
+.foot-panel4{
+    background-color: #0F1111;
+    color:white;
+    padding-top: 10px;
+    height: 100px;
+    text-align: center;
+    font-size:.7rem;
+
+}
+.pages{
+    padding-top: 25px;
+    
+}
+.copyright{
+    padding-top: 5px;
+
+}
